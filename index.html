@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stazione Meteorologica</title>
-  <meta name="description" content="Stazione meteorologica in tempo reale. Dati su temperatura, umidità, vento e altro ancora." />
+  <meta name="description" content="Stazione meteorologica in tempo reale. Dati su temperatura, umiditÃ , vento e altro ancora." />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     body {
@@ -190,7 +190,7 @@
         data: {
           labels: labels,
           datasets: [{
-            label: "Temperatura (°C)",
+            label: "Temperatura (Â°C)",
             data: data,
             borderColor: "#004080",
             backgroundColor: "rgba(0, 64, 128, 0.1)",
@@ -207,7 +207,7 @@
               beginAtZero: false,
               title: {
                 display: true,
-                text: "°C"
+                text: "Â°C"
               }
             },
             x: {
@@ -276,11 +276,11 @@
           : "N/A";
 
         weatherEl.innerHTML = `
-          <div class="info-row"><span class="icon" role="img" aria-label="Temperatura">🌡️</span><strong>Temperatura:</strong> ${temp} °C</div>
-          <div class="info-row"><span class="icon" role="img" aria-label="Umidità">💧</span><strong>Umidità:</strong> ${humidity}%</div>
-          <div class="info-row"><span class="icon" role="img" aria-label="Vento">🌬️</span><strong>Vento:</strong> ${windSpeed} km/h</div>
-          <div class="info-row"><span class="icon" role="img" aria-label="Pressione">🧭</span><strong>Pressione:</strong> ${pressure} hPa</div>
-          <div class="info-row"><span class="icon" role="img" aria-label="Ultimo aggiornamento">⏰</span><strong>Ultimo aggiornamento:</strong> ${obsTime}</div>
+          <div class="info-row"><span class="icon" role="img" aria-label="Temperatura">ðŸŒ¡ï¸</span><strong>Temperatura:</strong> ${temp} Â°C</div>
+          <div class="info-row"><span class="icon" role="img" aria-label="UmiditÃ ">ðŸ’§</span><strong>UmiditÃ :</strong> ${humidity}%</div>
+          <div class="info-row"><span class="icon" role="img" aria-label="Vento">ðŸŒ¬ï¸</span><strong>Vento:</strong> ${windSpeed} km/h</div>
+          <div class="info-row"><span class="icon" role="img" aria-label="Pressione">ðŸ§­</span><strong>Pressione:</strong> ${pressure} hPa</div>
+          <div class="info-row"><span class="icon" role="img" aria-label="Ultimo aggiornamento">â°</span><strong>Ultimo aggiornamento:</strong> ${obsTime}</div>
         `;
 
         spinner.style.display = "none";
@@ -332,7 +332,7 @@
             <li>
               <strong>${forecast.dayOfWeek[i]}</strong>: 
               ${forecast.narrative[i]} <br />
-              🌡️ ${forecast.temperatureMin[i]}°C / ${forecast.temperatureMax[i]}°C
+              ðŸŒ¡ï¸ ${forecast.temperatureMin[i]}Â°C / ${forecast.temperatureMax[i]}Â°C
             </li>
           `;
         }
